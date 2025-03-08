@@ -251,6 +251,19 @@
                 font-size: 0.9em;
             }
 
+            .terminal::-webkit-scrollbar {
+                display: none; /* Chrome, Safari */
+            }
+
+            .terminal.scrolling::-webkit-scrollbar,
+            .terminal.scrolling::-webkit-scrollbar-thumb {
+                display: block;
+            }
+
+            .terminal.scrolling {
+                scrollbar-width: thin; /* Firefox */
+            }
+
             /* Responsive adjustments */
             @media (max-width: 768px) {
                 body {
